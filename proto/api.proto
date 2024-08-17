@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package remote_runtime_api;
+
+option go_package = "./remoteRuntimeApi";
+
+// Auth is service for managing permissions and roles.
+service Runtime {
+  // Register registers a new user.
+  rpc Run (RunRequest) returns (RunResponse);
+}
+
+message RunRequest {
+  string command = 1;
+}
+
+message RunResponse {
+  string response = 1;
+}
