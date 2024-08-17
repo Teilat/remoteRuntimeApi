@@ -1,4 +1,4 @@
-module remoteRuntimeApi
+module github.com/Teilat/remoteRuntimeApi
 
 go 1.22
 
