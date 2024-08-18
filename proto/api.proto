@@ -12,8 +12,9 @@ service Runtime {
 
 message RunRequest {
   string command = 1;
+  repeated string args = 2;
 }
 
 message RunResponse {
-  string response = 1;
+  repeated string response = 1;
 }
